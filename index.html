@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppers</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href="CSS/style.css" rel="stylesheet">
+<!-- for slick slider -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-custom">
+        <a class="navbar-brand" href="#">Shoppers</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="#"><i class="bi bi-house-door-fill"></i> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Products
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Elcetronics</a>
+                <a class="dropdown-item" href="#">Stationary</a>
+                <a class="dropdown-item" href="#">Clothes</a>
+                <a class="dropdown-item" href="#">Footware</a>
+
+
+                <!-- <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a> -->
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <a href="#regmodal" data-toggle="modal"> Register</a> &nbsp;&nbsp;
+            <a href="#logmodal" data-toggle="modal"> Login</a> 
+          </span>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        </div>
+      </nav>
+      
+      <div class="jumbotron">
+      
+        <div id="textdata">
+        <h1 class="display-4">Welcome, Shopping World</h1>
+        <p class="lead">Diwali Sale- 50% OFF on all the electronic products.</p>
+        <hr class="my-4">
+        <p> Unleash your style potential with our latest arrivals – where every piece tells a story and every purchase is a step towards self-expression. </p>
+        <p class="lead">
+          <a class="btn btn-primary btn-sm" href="#" role="button"><i class="bi bi-cart-fill"></i> &nbsp;Shop Now</a>
+        </p>
+        </div>
+        <div id="imgdata">
+            <img src="images/shppingweb.png" class="img-fluid">
+        </div>
+   
+      </div>
+
+      <!-- about us section -->
+      <div class="container" id="about">
+        <h1 class="text-center my-3">About <span id="brandname">Shopping Web</span></h1>
+        <!-- <hr width="200px" class="bg-danger"> -->
+        <div class="row">
+          <div class="col-md-6">
+            <img src="images/shppingweb.png" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            
+          <p>Welcome to our one-stop shopping destination where style meets affordability! Dive into a world of endless possibilities as you explore our curated collection of fashion-forward trends and timeless classics. From sophisticated apparel to statement accessories, we've got everything you need to elevate your wardrobe game. Discover the joy of effortless shopping with our user-friendly interface and seamless checkout process. With exclusive deals and exciting promotions awaiting,
+             indulge your inner fashionista and redefine your style effortlessly. Shop now and let your unique personality shine through with every outfit!</p>
+  
+          </div>
+        </div>
+      </div>
+<!-- end of about us section -->
+
+
+<div class="container" id="product">
+  <h1 class="text-center my-3">Products On <span id="brandname">Bumper Discount</span></h1>
+<div class="row">
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-body">
+        <img src="images/bgremove-headphone1.png" style="width: 200px;" class="img-fluid">
+
+        <div id="product-icon">
+          <img src="images/heart-Photoroom.png-Photoroom.png" style="width: 40px;" >
+          <img src="images/addtocart-Photoroom.png-Photoroom.png" style="width: 40px;">
+
+
+        </div>
+        
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-info">price: 1600/-</button>
+        <img src="images/images-removebg-preview (2).png" id="addtocart" style="width: 30px; float: right;" >
+      </div>
+    </div> 
+  </div>
+
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-body">
+        <img src="images/bgremove-headphone2.png" style="width: 200px;" class="img-fluid">
+        <div id="product-icon">
+          <img src="images/heart-Photoroom.png-Photoroom.png" style="width: 40px;" >
+          <img src="images/addtocart-Photoroom.png-Photoroom.png" style="width: 40px;">
+
+
+        </div>
+        
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-info">Price: 2000/-</button >
+          <img src="images/images-removebg-preview (2).png" id="addtocart" style="width: 30px; float: right;" >
+      </div>
+    </div> 
+  </div>
+
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-body">
+        <img src="images/phone1-bgremove.png" style="width: 200px;" class="img-fluid">
+        <div id="product-icon">
+          <img src="images/heart-Photoroom.png-Photoroom.png" style="width: 40px;" >
+          <img src="images/addtocart-Photoroom.png-Photoroom.png" style="width: 40px;">
+
+
+        </div>
+        
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-info">Price: 16000/-</button>
+        <img src="images/images-removebg-preview (2).png" id="addtocart" style="width: 30px; float: right;" >
+      </div>
+    </div> 
+  </div>
+
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-body">
+        <img src="images/bg-remove-phone2.jpg" style="width: 200px;" class="img-fluid">
+        <div id="product-icon">
+          <img src="images/heart-Photoroom.png-Photoroom.png" style="width: 40px;" >
+          <img src="images/addtocart-Photoroom.png-Photoroom.png" style="width: 40px;">
+
+
+        </div>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-info">Price: 18000/-</button>
+        <img src="images/images-removebg-preview (2).png" id="addtocart" style="width: 30px; float: right;" >
+      </div>
+    </div> 
+  </div>
+</div>  
+<!-- end of first row -->
+<div class="row my-3">
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-body">
+        <img src="images/hoodie1-Photoroom.png-Photoroom.png" style="width: 200px;" class="img-fluid">
+        <div id="product-icon">
+          <img src="images/heart-Photoroom.png-Photoroom.png" style="width: 40px;" >
+          <img src="images/addtocart-Photoroom.png-Photoroom.png" style="width: 40px;">
+
+
+        </div>
+        
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-info">Price: 1000/-</button>
+        <img src="images/images-removebg-preview (2).png" id="addtocart" style="width: 30px; float: right;" >
+      </div>
+    </div> 
+  </div>
+
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-body">
+        <img src="images/Hoodie2-Photoroom.png-Photoroom.png" style="width: 400px;" class="img-fluid">
+        <div id="product-icon">
+          <img src="images/heart-Photoroom.png-Photoroom.png" style="width: 40px;" >
+          <img src="images/addtocart-Photoroom.png-Photoroom.png" style="width: 40px;">
+
+
+        </div>
+        
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-info">Price: 1500/-</button>
+        <img src="images/images-removebg-preview (2).png" id="addtocart" style="width: 30px; float: right;" >
+      </div>
+    </div> 
+  </div>
+
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-body">
+        <img src="images/shirt1-Photoroom.png-Photoroom.png" style="width: 180px;" class="img-fluid">
+        <div id="product-icon">
+          <img src="images/heart-Photoroom.png-Photoroom.png" style="width: 40px;" >
+          <img src="images/addtocart-Photoroom.png-Photoroom.png" style="width: 40px;">
+
+
+        </div>
+        
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-info">Price: 800/-</button>
+        <img src="images/images-removebg-preview (2).png" id="addtocart" style="width: 30px; float: right;" >
+      </div>
+    </div> 
+  </div>
+
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-body">
+        <img src="images/Shirt3-Photoroom.png-Photoroom.png" style="width: 200px;" class="img-fluid">
+        <div id="product-icon">
+          <img src="images/heart-Photoroom.png-Photoroom.png" style="width: 40px;" >
+          <img src="images/addtocart-Photoroom.png-Photoroom.png" style="width: 40px;">
+
+
+        </div>
+        
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-info">Price: 600/-</button>
+        <img src="images/images-removebg-preview (2).png" id="addtocart" style="width: 30px; float: right;" >
+      </div>
+    </div> 
+  </div>
+</div>
+</div>
+
+<!-- End of product section -->
+
+<!-- slick slider -->
+
+<div class="container">
+  <h1 class="text-center my-3">Shoppers Trending <span id="brandname"> Products </span></h1>
+  <div class="row slider">
+    <div class="col-md-12">
+      <img src="images/iphone-removebg-preview (1).png" class="img-fluid">
+    </div>
+    <div class="col-md-12">
+      <img src="images/Nothing-Phone-2a-1-Photoroom.png-Photoroom.png"  class="img-fluid">
+    </div>
+    <div class="col-md-12">
+      <img src="images/shoes1-removebg-preview.png"  class="img-fluid">
+    </div>
+    <div class="col-md-12">
+      <img src="images/shoes2-Photoroom.png-Photoroom.png"  class="img-fluid">
+    </div>
+    <div class="col-md-12">
+      <img src="images/Smart_watch1-removebg-preview.png"  class="img-fluid">
+    </div>
+    <div class="col-md-12">
+      <img src="images/smartwatch2-removebg-preview.png"  class="img-fluid">
+    </div>
+    <div class="col-md-12">
+      <img src="images/victus-removebg-preview.png"  class="img-fluid">
+    </div>
+    <div class="col-md-12">
+      <img src="images/macbook-Photoroom.png-Photoroom.png"  class="img-fluid">
+    </div>
+  </div>
+</div>
+<!-- end of slick slider -->
+
+<div class="footer">
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <h3>Company</h3>
+      <ul>
+        <span class="navbar-text">
+          <li><a href="#regmodal">About Us</a></li>
+          <li><a href="#regmodal">Our Services</a></li>
+          <li><a href="#regmodal">Privacy Policy</a></li>
+          <li><a href="#regmodal">Affiliate Program</a></li>
+        </span>
+      </ul>
+    </div>
+    
+      <div class="col-md-9">
+        <div class="row">
+        <div class="col-md-3">
+          <h3>Get Help</h3>
+          <ul>
+            <span class="navbar-text">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Payment Options</a></li>
+            </span>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Online Shop</h3>
+                <ul>
+                  <span class="navbar-text">
+                    <li><a href="#">Watch</a></li>
+                    <li><a href="#">Bag</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Dress</a></li>
+                  </span>
+                </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Customer Support</h3>
+          <span class="navbar-text">
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Support Center</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+          </span>
+        </div>
+        <div class="col-md-3">
+          <h3>Connect With Us</h3>
+          <span class="navbar-text">
+            <ul>
+              <li><a href="#"><i class="bi bi-facebook"></i> &nbsp;Facebook</a></li>
+              <li><a href="#"> <i class="bi bi-instagram"></i> &nbsp;Instagram</a></li>
+              <li><a href="#"><i class="bi bi-twitter-x"></i>&nbsp;Twitter</a></li>
+            </ul>
+
+          </span>
+        </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+</div>
+<!-- register modal-->
+
+      <div class="modal" tabindex="-1" role="dialog" id="regmodal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Registration Form</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Full Name</label>
+                  <input type="text" class="form-control" id="fullname1" aria-describedby="emailHelp" placeholder="Enter Full Name">
+                  
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Contact No.</label>
+                  <input type="tel" class="form-control" id="telephone1" placeholder="Enter Contact No.">
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Register</button>
+                <p>Already have an Account <a href="#logmodal" data-toggle="modal" data-dismiss="modal">Sign In</a></p>
+              </form>
+            </div>
+            <div class="modal-footer">
+
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of registration form -->
+
+      <!-- start of login form -->
+      <div class="modal" tabindex="-1" role="dialog" id="logmodal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Login Form</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Login</button>
+                <p>Don't have an Account <a href="#regmodal" data-toggle="modal" data-dismiss="modal">Sign Up</a></p>
+              </form>
+            </div>
+            <div class="modal-footer">
+              
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- slick slider -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js" integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      
+      <script>
+        $('.slider').slick({
+          dots: true,
+          infinite: false,
+          speed: 800,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          autoplay: true,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
+      </script>
+      
+      <!-- end of slick slider -->
+</body>
+</html>

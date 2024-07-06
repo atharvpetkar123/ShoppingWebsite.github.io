@@ -1,0 +1,67 @@
+.jumbotron{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 2rem;
+    background-color:rgb(7, 73, 127) ;
+    color: white;
+    border-radius: 0rem;
+    
+    
+}
+.jumbotron img{
+width: 600px;
+}
+.bg-custom{
+    background-color:rgb(7, 73, 127);
+}
+.nav-link , .navbar-brand {
+color: white;
+}
+.navbar-text a{
+    color: white;
+}
+img
+{
+    width: 500px;
+}
+
+#about p{
+    text-align: justify;
+    user-select: none;
+}
+ #brandname
+{
+    color:rgb(7, 73, 127) ;
+}
+
+#product #product-icon{
+    width: 30px;
+}
+#product #product-icon img{
+    margin: 3px 0px;
+    padding: 3px;
+}
+#product-icon{
+position: absolute;
+top: 20px;
+opacity:0;
+transition: opacity 0.3s;
+cursor: pointer;
+}
+
+#product .card:hover #product-icon{
+    opacity: 1;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    background-color:rgb(7, 73, 127);
+    margin-top: 150px;
+    height: 250px;
+    color: white;
+}
+.footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
